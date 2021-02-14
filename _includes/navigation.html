@@ -6,4 +6,11 @@
     </a>
   </div>
   {% endfor %}
+  {% for rous in site.rouses %}
+  <div>
+    <a href="{{ rous.url }}">
+      {{ rous.name }}
+    </a>
+  </div>
+  {% endfor %}
 </nav>

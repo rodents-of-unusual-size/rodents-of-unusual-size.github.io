@@ -4,3 +4,14 @@ description: A collaborative site for the Oak Hills 5th Ward YM
 url: "https://rodents-of-unusual-size.github.io"
 markdown: GFM
 theme: jekyll-theme-dinky
+
+collections:
+  rouses:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "rouses"
+    values:
+      layout: "rous"
