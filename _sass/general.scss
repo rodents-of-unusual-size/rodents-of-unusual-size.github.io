@@ -16,6 +16,7 @@ h1.header {
   .setup {
     margin: 20px 0 5px 0;
     border-top: 1px solid #ccc;
+    padding-top: 10px;
   }
   .punchline {
     margin: 0 0 20px 0;
@@ -24,5 +25,20 @@ h1.header {
   }
   p {
     margin: 0 0 0 0;
+  }
+}
+
+.scripture {
+  font-family: serif;
+  font-size: large;
+  font-style: italic;
+  text-align: center;
+  margin: 0 0 0 0;
+
+  + .citation {
+    font-style: normal;
+  }
+  + .citation:before {
+    content: "—"
   }
 }
