@@ -10,31 +10,31 @@ The website is located at https://rodents-of-unusual-size.github.io
 Make additions and changes to the site by submitting a Pull Request. You can do this directly from
 GitHub by following these steps:
 
-1. You can't make changes directly to the master branch, so first you'll need to make a new branch:
+1. You can't make changes directly to the master branch, so first you'll need to make a new branch. 
+Follow the [GitHub documentation](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-and-deleting-branches-within-your-repository#creating-a-branch) to make a new branch.
 
-2. Add or edit files:
+2. Add or edit files [like this](https://docs.github.com/en/github/managing-files-in-a-repository/editing-files-in-your-repository). 
 
-3. Commit your changes:
+3. Commit your changes.
 
-4. If you need to add an image, upload it and again commit changes:
+4. If you need to add an image, [upload it](https://docs.github.com/en/github/managing-files-in-a-repository/adding-a-file-to-a-repository) and again commit changes.
 
-5. Go back to the main site and make a Pull Request:
+5. Go back to the main repository page and make a Pull Request.
 
-6. Name your Pull Request and submit it:
+6. Name your Pull Request and submit it.
 
-7. Ask another collaborator to review and approve your changes:
+7. Ask another collaborator to review and approve your changes.
 
-8. Once your Pull Request is approved, merge it into the master branch:
+8. Once your Pull Request is approved, merge it into the master branch.
 
 Once merged, your branch will be automatically deleted.
 
-9. Within a short time your changes should be available on the site. Verify things look how you expected. If anything
-doesn't look right, repeat the above steps and fix it.
+9. Within a short time (generally about 30 seconds) your changes should be available on the site. 
+   Verify things look how you expected. If anything doesn't look right, repeat the above steps and fix it.
 
 ### Running the Site Locally
 
-It is not necessary to run the site locally, but if you would like to
-do so, follow these steps:
+It is not necessary to run the site locally, but if you would like to do so, follow these steps:
 
 1. Install Ruby and Jekyll (https://jekyllrb.com/docs/installation/)
 2. Clone this repo:
