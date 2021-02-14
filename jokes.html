@@ -1,0 +1,42 @@
+---
+layout: page
+title: Jokes
+description: Add your favorite joke here! (Dad jokes are begrudgingly tolerated.)
+---
+
+<script src="/assets/javascript/jokes.js"></script>
+
+<article class="jokes">
+  <div>
+    <p class="setup">Changing out printer cartridges the other day, it occurred to me that magenta and yellow
+      offer no inspiration as subject matter for a song.</p>
+    <button class="revealer">Go on</button>
+    <p class="punchline">But you could write a little ditty about black and cyan.</p>
+  </div>
+
+  <div>
+    <p class="setup">How do you catch a unique bird?</p>
+    <button class="revealer">Tell me</button>
+    <p class="punchline">Unique up on it.</p>
+  </div>
+
+  <div>
+    <div class="setup">
+      <p>Darth Vader: I know what you are getting for Christmas.</p>
+      <p>Luke: That's impossible. How could you know that?</p>
+    </div>
+    <button class="revealer">I'm ready</button>
+    <p class="punchline">Darth Vader: I have felt your presents.</p>
+  </div>
+</article>
+
+<script>
+  document.querySelectorAll(".revealer").forEach(function (element) {
+    element.addEventListener("click", function (event) {
+      event.target.style.display = "none"
+      event.target.parentElement.querySelectorAll(".punchline").forEach(function (punchline) {
+        punchline.style.display = "inline"
+      })
+    })
+  })
+</script>
