@@ -3,6 +3,11 @@ h1.header {
   font-weight: bold;
 }
 
-img.with-caption {
+.with-caption {
   margin-bottom: 0;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }
