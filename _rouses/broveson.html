@@ -6,3 +6,32 @@ name: Brother Oveson
 <img src="/assets/images/drill.jpg" class="with-caption img-fluid">
 <p class="scripture">"Wherefore, the Lord God gave unto man that he should act for himself."</p>
 <p class="scripture citation">2 Nephi 2:16</p>
+<hr/>
+<h3>Pig Latin Translator</h3>
+<h5>English phrase:</h5>
+<input id="input-1" type="text" size="50">
+<button id="translate">Translate</button>
+<h5>Pig Latin:</h5>
+<span id="output-1"></span>
+
+<script>
+  const translateButton = document.querySelector("#translate")
+  const englishInput = document.querySelector("#input-1")
+  const output = document.querySelector("#output-1")
+
+  englishInput.addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+      translateButton.click()
+    }
+  })
+
+  translateButton.addEventListener("click", function () {
+    let english = englishInput.value;
+    let words = english.split(" ")
+    let latinWords = words.map(function (word) {
+      return word.replace(/^[aeiou]\w*/, "$&way")
+        .replace(/(^[^aeiou]+)(\w*)/, "$2$1ay")
+    })
+    output.innerHTML = latinWords.join(" ")
+  })
+</script>
