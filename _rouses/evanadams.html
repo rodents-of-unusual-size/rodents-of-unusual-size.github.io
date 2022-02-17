@@ -1,0 +1,38 @@
+---
+name: Evan Adams
+---
+<script src="/assets/javascript/jokes.js"></script>
+
+<article class="Evan">
+  <div>
+    <p class="setup">My Favorite Flavor of Jelly Bean Is...</p>
+    <button class="revealer">Go on</button>
+    <p class="punchline">Sour Cherry Jelly Bean</p>
+  </div>
+
+  <div>
+    <p class="setup">What Is My Favorite Color?</p>
+    <button class="revealer">Tell me</button>
+    <p class="punchline">Purple</p>
+  </div>
+
+  <div>
+    <div class="setup">
+      <p>What Is My Favorite Food?</p>
+    </div>
+    <button class="revealer">I'm ready</button>
+    <p class="punchline">French Fries</p>
+  </div>     
+</article>
+
+<script>
+  document.querySelectorAll(".revealer").forEach(function (element) {
+    element.addEventListener("click", function (event) {
+      event.target.style.display = "none"
+      event.target.parentElement.querySelectorAll(".punchline").forEach(function (punchline) {
+        punchline.style.display = "inline"
+        
+      })
+    })
+  })
+</script>
